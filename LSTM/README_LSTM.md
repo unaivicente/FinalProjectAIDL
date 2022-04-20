@@ -19,7 +19,7 @@ L6: Using 8Khz. We start with 4 layer 1D convolutional layers for feature extrac
   * Accuracy: 90%
 
 L7: Using 8Khz data. Same as L1 but with 256 hidden layers in the LSTM layer.
-  * Accuracy: %
+  * Accuracy: 90%
 
 L8: Using 8Khz data. 3 layer 1D convolutional layers in the same sequence as in L1.
   * Accuracy: %
