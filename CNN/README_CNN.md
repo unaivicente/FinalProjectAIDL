@@ -8,7 +8,7 @@ C2: Using 16Khz data. 4 layer 1D convolutional layers (Conv1d) that go from 1 to
   * Accuracy: 83%
 
 C3: Using 8Khz data. 6 layer 1D convolutional layers with extended channels from 1 to 2048, also same batch normalization and 1D maxpooling until layer 4.
-  * Accuracy: 
+  * Accuracy: 80%
 
 C4: Using 16Khz data. 6 layer 1D convolutional layers with extended channels from 1 to 2048, also same batch normalization and 1D maxpooling until layer 4.
   * Accuracy: 85%
