@@ -22,7 +22,7 @@ L7: Using 8Khz data. Same as L1 but with 256 hidden layers in the LSTM layer.
   * Accuracy: 90%
 
 L8: Using 8Khz data. 3 layer 1D convolutional layers in the same sequence as in L1.
-  * Accuracy: %
+  * Accuracy: 88%
 
 L9: Using 8Khz. We start with 4 layer 1D convolutional layers for feature extraction that go from 1 to 256 channels with batch normalization and 1D maxpooling, we add another 5th layer with maxpooling and then connect 1024 channels to a LSTM with 128 hidden dimension units that end up to a fully connected linear layer.
   * Accuracy: %
