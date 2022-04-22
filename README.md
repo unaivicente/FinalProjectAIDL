@@ -48,7 +48,7 @@ Accuracy: 85%
 ![cnngraph](https://user-images.githubusercontent.com/92716609/164751341-ef5ebeb8-6da2-4533-b50d-871e4ec74019.png)
 
 
-# LSTM ARCHITECTURES
+##1 LSTM ARCHITECTURES
 
 Here we present the following model architectures:
 
