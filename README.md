@@ -19,16 +19,17 @@ The machine learning framework used is Pytorch and the machine learning environm
 
 ## Dataset
 
-Some facts about our dataset, identified as SPEECHCOMMANDS version 2 by Google. The audio files are 16Khz sample rate 1 second human voice recordings of 35 different words. The dataset comprises a sample of: 
+Some facts about our dataset, identified as SPEECHCOMMANDS version 2 by Google. The WAV audio files are 16Khz sample rate 1 second human voice recordings of 35 different words. The dataset comprises a sample of: 
 
 | Total audio files  | Total speakers |
 | ------------------ | -------------- |
 |       126815       |      3124      |
 
+We split the dataset into train, validation and test set. This split isn't random, the dataset contains txt files where specify the wav audio files of each set.
 
 | Split of the dataset | Number of audio files | Number of speakers |
 | --- | --- | --- |
-| Training        |  105829   |  2618  |
+| Train           |  105829   |  2618  |
 | Validation      |    9981   |   256  |
 | Test            |   11005   |   250  |
 
@@ -38,7 +39,13 @@ new_sample_rate = 8000
 transform = torchaudio.transforms.Resample(orig_freq=16000, new_freq=new_sample_rate)
 ```
 
-The experiment
+To have a visual vision of the audio signal, we plot the waveform of different wav files:
+
+
+The deep neural networks can obtain as input a mel spectogram from the audio instead of the raw audio data. A spectogram is a visualization of the frequency spectrum of a signal and the Mel scale mimics how the human ear works (humans are better at detecting differences at lower frequencies than at higher frequencies). We use torchaudio library to get the mel spectogram:
+
+
+
 
 In our Dataset_analysis.ipynb(FALTA LINK) file it is possible to have a deeper understanding of this dataset as well as it is possible to listen to sample examples.
 
@@ -46,7 +53,11 @@ For further information about the dataset, see this [paper](https://arxiv.org/pd
 
 ## Experiment
 
-We created different architectures and tuned the hyperparameters of the different deep neural networks in order to find the highest accuracy. We wanted to obtain the different results by changing the sample rate (8kHz or 16kHz) of the input raw data.
+In this experiment, we created different architectures and tuned the hyperparameters of the different deep neural networks in order to find the highest accuracy. We wanted to obtain the different results by changing the sample rate (8kHz or 16kHz) of the input raw data.
+
+We created 2 CNN architectures, 5 LSTM and 6 GRU.
+
+When the models are training, the validation set is used to obtain the val_loss and compare it to the previous val_loss and continue training the model with the lowest loss.
 
 ### Different architectures and hyperparameter tuning
 
@@ -110,6 +121,38 @@ Accuracy: 88%
 ![grugraph](https://user-images.githubusercontent.com/92716609/164751352-881c90e6-e827-403c-9d3c-07bea17950a6.png)
 
 #### GRU
+
+Here we present the different GRU architectures tested:
+
+* GRU-1 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 100 of batch size, 10 epochs, 0.5 of learning rate and SGD optimizer without weight decay.
+
+      - 8kHz accuracy : 90%
+      - 16kHz accuracy : 92%
+
+* GRU-2 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 50 of batch size, 40 epochs, 0.01 of learning rate and SGD optimizer with 0.0001 weight decay and StepLR that decays de learning rate of each parameter group by 0.1 (gamma) every 20 epochs.
+
+      - 8kHz accuracy : 90%
+      - 16kHz accuracy : 91%
+
+* GRU-3 : 3 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 10 epochs, 0.5 of learning rate and SGD optimizer without weight decay.
+      
+      - 8kHz accuracy : 91%
+      - 16kHz accuracy : 90%
+
+* GRU-4 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 10 epochs, 1e-4 of learning rate and Adam optimizer.
+
+      - 8kHz accuracy : 89%
+      - 16kHz accuracy : 91%
+     
+* GRU-5 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 150 of batch size, 10 epochs, 0.01 of learning rate and SGD optimizer without weight decay.
+
+      - 8kHz accuracy : 73%
+      - 16kHz accuracy : 64%
+ 
+* GRU-6 : 2 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 30 epochs, 1e-4 of learning rate and Adam optimizer.
+      - 8kHz accuracy : 85%
+      - 16kHz accuracy : 
+
 
 ## Extra experiment
 (MELSpec)
