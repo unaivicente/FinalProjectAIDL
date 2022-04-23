@@ -32,8 +32,17 @@ Some facts about our dataset, identified as SPEECHCOMMANDS version 2 by Google. 
 | Validation      |    9981   |   256  |
 | Test            |   11005   |   250  |
 
+To downsample the signal from 16kHz to 8kHz we use the torchaudio library.
+```
+new_sample_rate = 8000
+transform = torchaudio.transforms.Resample(orig_freq=16000, new_freq=new_sample_rate)
+```
+
+The experiment
 
 In our Dataset_analysis.ipynb(FALTA LINK) file it is possible to have a deeper understanding of this dataset as well as it is possible to listen to sample examples.
+
+For further information about the dataset, see this [paper](https://arxiv.org/pdf/1804.03209.pdf).
 
 ## Experiment
 
