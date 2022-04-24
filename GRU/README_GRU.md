@@ -5,49 +5,39 @@
 
 
 * GRU-1 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 100 of batch size, 10 epochs, 0.5 of learning rate and SGD optimizer without weight decay.
-
-      - 8kHz accuracy : 90%
-      - 16kHz accuracy : 92%
+ 
  
  
  ![gru2_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-2_diagram.png)
 
 * GRU-2 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 50 of batch size, 40 epochs, 0.01 of learning rate and SGD optimizer with 0.0001 weight decay and StepLR that decays de learning rate of each parameter group by 0.1 (gamma) every 20 epochs.
 
-      - 8kHz accuracy : 90%
-      - 16kHz accuracy : 91%
-      
+
       
  ![gru3_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-3_diagram.png)
 
 * GRU-3 : 3 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 10 epochs, 0.5 of learning rate and SGD optimizer without weight decay.
-      
-      - 8kHz accuracy : 92%
-      - 16kHz accuracy : 90%
+
       
       
 ![gru4_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-4_diagram.png)
 
 * GRU-4 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 10 epochs, 1e-4 of learning rate and Adam optimizer.
 
-      - 8kHz accuracy : 89%
-      - 16kHz accuracy : 91%
      
      
 ![gru5_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-5_diagram.png)
      
 * GRU-5 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 150 of batch size, 10 epochs, 0.01 of learning rate and SGD optimizer without weight decay.
 
-      - 8kHz accuracy : 73%
-      - 16kHz accuracy : 64%
  
  
  ![gru6_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-6_diagram.png)
  
 * GRU-6 : 2 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 30 epochs, 1e-4 of learning rate and Adam optimizer.
 
-      - 8kHz accuracy : 85%
-      - 16kHz accuracy : 85%
+
+The results of accuracy with the different sample rate of the audio input:
       
 | Model | Accuracy 8kHz audio input | Accuracy 16kHz audio input |
 | --- | --- | --- |
