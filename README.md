@@ -17,6 +17,7 @@ We found a [Kaggle challenge](https://www.kaggle.com/competitions/tensorflow-spe
 ![leaderboard_kaggle](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/leaderboard_kaggle.png)
 
 
+
 ## Tech used
 
 The machine learning framework used is Pytorch and the machine learning environment, Google Colab. Colab provides a GPU with about 12GB of RAM and 38GB of disk to locate the dataset and the .pth file of the model. We don't use Google Cloud because with Colab resources we have enough.
@@ -229,41 +230,39 @@ Here we present the different GRU architectures tested:
 
 * GRU-1 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 100 of batch size, 10 epochs, 0.5 of learning rate and SGD optimizer without weight decay.
 
-      - 8kHz accuracy : 90%
-      - 16kHz accuracy : 92%
-
 * GRU-2 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 50 of batch size, 40 epochs, 0.01 of learning rate and SGD optimizer with 0.0001 weight decay and StepLR that decays de learning rate of each parameter group by 0.1 (gamma) every 20 epochs.
 
-      - 8kHz accuracy : 90%
-      - 16kHz accuracy : 91%
-
 * GRU-3 : 3 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 10 epochs, 0.5 of learning rate and SGD optimizer without weight decay.
-      
-      - 8kHz accuracy : 92%
-      - 16kHz accuracy : 90%
 
 * GRU-4 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 10 epochs, 1e-4 of learning rate and Adam optimizer.
 
-      - 8kHz accuracy : 89%
-      - 16kHz accuracy : 91%
-     
 * GRU-5 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 150 of batch size, 10 epochs, 0.01 of learning rate and SGD optimizer without weight decay.
 
-      - 8kHz accuracy : 73%
-      - 16kHz accuracy : 64%
- 
 * GRU-6 : 2 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 30 epochs, 1e-4 of learning rate and Adam optimizer.
 
-      - 8kHz accuracy : 85%
-      - 16kHz accuracy : 85%
 
-![grugraph](https://user-images.githubusercontent.com/92716609/164751352-881c90e6-e827-403c-9d3c-07bea17950a6.png)
-
-For more information about the different architectures, see [Readme](https://github.com/unaivicente/FinalProjectAIDL/blob/main/GRU/README_GRU.md) in GRU folder.
+For more information about the different architectures, see [README](https://github.com/unaivicente/FinalProjectAIDL/blob/main/GRU/README_GRU.md) in GRU folder.
 
 ### Results
+The main objective was to improve the accuracies found in the [M5 paper](https://arxiv.org/pdf/1610.00087.pdf) (63.42% accuracy of M5 model) and in the [Kaggle challenge](https://www.kaggle.com/competitions/tensorflow-speech-recognition-challenge/overview) (91.06% acc.). The accuracies obtained passing the test set are the following:
 
+| Model | 8kHz audio input | 16kHz audio input |
+| --- | --- | --- |
+| C1    |  77%  |  83%  |
+| C2    |  80%  |  85%  |
+| L1    |  90%  |  92%  |
+| L2    |  90%  |  92%  |
+| L3    |  88%  |  88%  |
+| L4    |  79%  |  91%  |
+| L5    |  88%  |  91%  |
+| GRU1  |  90%  |  92%  |
+| GRU2  |  90%  |  91%  |
+| GRU3  |  92%  |  90%  |
+| GRU4  |  89%  |  91%  |
+| GRU5  |  73%  |  64%  |
+| GRU6  |  85%  |  85%  |
 
+![grugraph](https://user-images.githubusercontent.com/92716609/164751352-881c90e6-e827-403c-9d3c-07bea17950a6.png)
 
 ### Conclusions
 
