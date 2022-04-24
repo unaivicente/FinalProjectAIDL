@@ -1,6 +1,6 @@
-# FinalProjectAIDL
+# Speech Classification
+This is a project with several Deep Learning models that gets an audio input and predicts the corresponding label.
 
-## Introduction
 
 We started our project with a first aim that we proposed, try to use a transformer architecture directly using waveform raw data from our dataset. However, after numerous attemps we ended up trying many different architectures as we understood there were complexities using a transformer and 1D data that were out of our control and knowledge. Therefore, we are presenting in this present work a comparative study between different DL architectures using raw waveform as well as other methods with the same dataset in an attempt to explore sequential data processing and the different feature extractions with convolutional 1D methods.
 
@@ -66,15 +66,19 @@ For further information about the dataset, see this [paper](https://arxiv.org/pd
 
 ## Experiment
 
+### Hypothesis
+
+### Experiment setup
+
 In this experiment, we created different architectures and tuned the hyperparameters of the different deep neural networks in order to find the highest accuracy. We wanted to obtain the different results of the same architectures by changing the sample rate (8kHz or 16kHz) of the input raw data.
 
 We created 2 CNN architectures, 5 LSTM and 6 GRU.
 
 When the models are training, the validation set is used to obtain the val_loss and compare it to the previous val_loss and continue training the model with the lowest loss.
 
-### Different architectures and hyperparameter tuning
+#### Different architectures and hyperparameter tuning
 
-#### CNN 
+##### CNN 
 
 Here we present the following model architectures based only on 1D Convolutional Layers:
 
@@ -94,7 +98,7 @@ Accuracy: 85%
 ![cnngraph](https://user-images.githubusercontent.com/92716609/164751341-ef5ebeb8-6da2-4533-b50d-871e4ec74019.png)
 
 
-#### LSTM
+##### LSTM
 
 Here we present the following model architectures:
 
@@ -132,7 +136,7 @@ Accuracy: 88%
 ![lstmgraph](https://user-images.githubusercontent.com/92716609/164751348-10fe9c45-efdb-464f-b99e-46fe77e1f1cc.png)
 
 
-#### GRU
+##### GRU
 
 Another deep neural network tested is GRU with the following base architecture.
 
@@ -173,6 +177,12 @@ Here we present the different GRU architectures tested:
 ![grugraph](https://user-images.githubusercontent.com/92716609/164751352-881c90e6-e827-403c-9d3c-07bea17950a6.png)
 
 For more information about the different architectures, see [Readme](https://github.com/unaivicente/FinalProjectAIDL/blob/main/GRU/README_GRU.md) in GRU folder.
+
+### Results
+
+
+
+### Conclusions
 
 
 ## Extra experiment
