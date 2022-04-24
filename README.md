@@ -17,7 +17,7 @@ The deep neural networks used:
 
 The machine learning framework used is Pytorch and the machine learning environment, Google Colab. Colab provides a GPU with about 12GB of RAM and 38GB of disk to locate the dataset and the .pth file of the model. We don't use Google Cloud because with Colab resources we have enough.
 
-An example of GPU provided by Google Colab:
+An example of GPU provided by Google Colab, a TESLA K80 GPU with 12GB:
 
 ![info_gpu](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/colab_gpu.png)
 
@@ -128,6 +128,10 @@ Accuracy: 88%
 
 
 #### GRU
+
+Another deep neural network tested is GRU with the following base architecture.
+
+![gru_architecture](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru_diagram.png)
 
 Here we present the different GRU architectures tested:
 
