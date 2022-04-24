@@ -19,6 +19,7 @@ The machine learning framework used is Pytorch and the machine learning environm
 
 An example of GPU provided by Google Colab:
 
+[info_gpu](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/colab_gpu.png)
 
 
 ## Dataset
