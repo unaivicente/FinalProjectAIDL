@@ -50,7 +50,7 @@ The deep neural networks can obtain as input a mel spectogram from the audio ins
 ![mel_spectogram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/zero_mel_spectogram.png)
 
 
-In our Dataset_analysis.ipynb(FALTA LINK) file it is possible to have a deeper understanding of this dataset as well as it is possible to listen to sample examples.
+In our [Dataset_analysis.ipynb](https://github.com/unaivicente/FinalProjectAIDL/blob/main/Dataset_analysis.ipynb) file it is possible to have a deeper understanding of this dataset as well as it is possible to listen to sample examples.
 
 For further information about the dataset, see this [paper](https://arxiv.org/pdf/1804.03209.pdf).
 
