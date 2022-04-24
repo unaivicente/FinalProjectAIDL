@@ -43,10 +43,11 @@ transform = torchaudio.transforms.Resample(orig_freq=16000, new_freq=new_sample_
 
 To have a visual vision of the audio signal, we plot the waveform of different wav files:
 
+![waveforms](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/waveforms_speech_commands.png)
 
 The deep neural networks can obtain as input a mel spectogram from the audio instead of the raw audio data. A spectogram is a visualization of the frequency spectrum of a signal and the Mel scale mimics how the human ear works (humans are better at detecting differences at lower frequencies than at higher frequencies). We use torchaudio library to get the mel spectogram:
 
-
+![mel_spectogram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/zero_mel_spectogram.png)
 
 
 In our Dataset_analysis.ipynb(FALTA LINK) file it is possible to have a deeper understanding of this dataset as well as it is possible to listen to sample examples.
