@@ -13,6 +13,11 @@ The deep neural networks used:
 * LSTM
 * GRU
 
+We found a [Kaggle challenge](https://www.kaggle.com/competitions/tensorflow-speech-recognition-challenge/leaderboard?) on speech recognition with the same dataset as ours and this encouraged us to try to achieve a higher accuracy than the winner.
+
+![leaderboard_kaggle](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/leaderboard_kaggle.png)
+
+
 ## Tech used
 
 The machine learning framework used is Pytorch and the machine learning environment, Google Colab. Colab provides a GPU with about 12GB of RAM and 38GB of disk to locate the dataset and the .pth file of the model. We don't use Google Cloud because with Colab resources we have enough.
