@@ -29,6 +29,19 @@ An example of GPU provided by Google Colab, a TESLA K80 GPU with 12GB:
 ## Usage
 
 ### Folder structure
+The first 4 folders contains the different models, the 'doc' folder contains the images, graphs and visual documentation, the 'Dataset_analysis.ipynb' file shows dataset features and 'Results.ipynb' upload the .pth models and prepare it to pass the test set of the dataset and view the results obtained.
+```
+├── CNN
+├── GRU
+├── LSTM
+├── MEL
+├── doc
+├── Dataset_analysis.ipynb
+├── Results.ipynb
+├── README.md
+
+```
+
 CNN folder. Contains 4 .ipynb files of models to train them and a README file for more information about the models architecture and hyperparameter tuning.
 ```
 CNN
@@ -39,6 +52,7 @@ CNN
 ├── README_CNN.md
 
 ```
+
 GRU folder. Contains 12 .ipynb files of models to train them and a README file for more information about the models architecture and hyperparameter tuning.
 ```
 GRU
@@ -87,6 +101,13 @@ MEL
 ├──README_MEL.md
 
 ```
+
+### To run the files
+The only requirement is to have a Google account and download the .ipynb files of this repository.
+
+      1. Download the .ipynb files.
+      2. Open Google Colaboratory, click File -> Upload notebook and select all the .ipynb files.
+      3. Open the different .ipynb you want to run and the only you have to do is click on Runtime -> Run all.
 
 
 ## Dataset
