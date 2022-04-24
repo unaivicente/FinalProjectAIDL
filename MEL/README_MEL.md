@@ -1,6 +1,4 @@
 
-##MelSpectogram
-
 Here we present the following model architectures based only on MelSpectogram, this time the input will be 2-dimensional:
 - M1: Using 8Khz data. 
 Accuracy: 64%
