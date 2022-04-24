@@ -15,7 +15,11 @@ The deep neural networks used:
 
 ## Tech used
 
-The machine learning framework used is Pytorch and the machine learning environment, Google Colab. Colab 
+The machine learning framework used is Pytorch and the machine learning environment, Google Colab. Colab provides a GPU with about 12GB of RAM and 38GB of disk to locate the dataset and the .pth file of the model. We don't use Google Cloud because with Colab resources we have enough.
+
+An example of GPU provided by Google Colab:
+
+
 
 ## Dataset
 
@@ -56,7 +60,7 @@ For further information about the dataset, see this [paper](https://arxiv.org/pd
 
 ## Experiment
 
-In this experiment, we created different architectures and tuned the hyperparameters of the different deep neural networks in order to find the highest accuracy. We wanted to obtain the different results by changing the sample rate (8kHz or 16kHz) of the input raw data.
+In this experiment, we created different architectures and tuned the hyperparameters of the different deep neural networks in order to find the highest accuracy. We wanted to obtain the different results of the same architectures by changing the sample rate (8kHz or 16kHz) of the input raw data.
 
 We created 2 CNN architectures, 5 LSTM and 6 GRU.
 
