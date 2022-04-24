@@ -19,13 +19,15 @@ The machine learning framework used is Pytorch and the machine learning environm
 
 ## Dataset
 
-Some facts about our dataset, identified as SPEECHCOMMANDS version 2 by Google. The WAV audio files are 16Khz sample rate 1 second human voice recordings of 35 different words. The dataset comprises a sample of: 
+Some facts about our dataset, identified as SPEECHCOMMANDS version 2 by Google. The WAV audio files are mono (one channel), 16Khz sample rate 1 second human voice recordings of 35 different words. The dataset comprises a sample of: 
 
 | Total audio files  | Total speakers |
 | ------------------ | -------------- |
 |       126815       |      3124      |
 
 We split the dataset into train, validation and test set. This split isn't random, the dataset contains txt files where specify the wav audio files of each set.
+
+It would be interesting to know the age and gender of the speakers, but for privacy reasons they don't indicate it.
 
 | Split of the dataset | Number of audio files | Number of speakers |
 | --- | --- | --- |
@@ -118,7 +120,6 @@ Accuracy: 88%
 
 ![lstmgraph](https://user-images.githubusercontent.com/92716609/164751348-10fe9c45-efdb-464f-b99e-46fe77e1f1cc.png)
 
-![grugraph](https://user-images.githubusercontent.com/92716609/164751352-881c90e6-e827-403c-9d3c-07bea17950a6.png)
 
 #### GRU
 
@@ -136,7 +137,7 @@ Here we present the different GRU architectures tested:
 
 * GRU-3 : 3 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 10 epochs, 0.5 of learning rate and SGD optimizer without weight decay.
       
-      - 8kHz accuracy : 91%
+      - 8kHz accuracy : 92%
       - 16kHz accuracy : 90%
 
 * GRU-4 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 10 epochs, 1e-4 of learning rate and Adam optimizer.
@@ -150,8 +151,11 @@ Here we present the different GRU architectures tested:
       - 16kHz accuracy : 64%
  
 * GRU-6 : 2 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 30 epochs, 1e-4 of learning rate and Adam optimizer.
+
       - 8kHz accuracy : 85%
-      - 16kHz accuracy : 
+      - 16kHz accuracy : 85%
+
+![grugraph](https://user-images.githubusercontent.com/92716609/164751352-881c90e6-e827-403c-9d3c-07bea17950a6.png)
 
 
 ## Extra experiment
