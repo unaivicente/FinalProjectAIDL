@@ -15,7 +15,11 @@ The deep neural networks used:
 
 ## Tech used
 
-The machine learning framework used is Pytorch and the machine learning environment, Google Colab. Colab 
+The machine learning framework used is Pytorch and the machine learning environment, Google Colab. Colab provides a GPU with about 12GB of RAM and 38GB of disk to locate the dataset and the .pth file of the model. We don't use Google Cloud because with Colab resources we have enough.
+
+An example of GPU provided by Google Colab:
+
+
 
 ## Dataset
 
@@ -43,19 +47,20 @@ transform = torchaudio.transforms.Resample(orig_freq=16000, new_freq=new_sample_
 
 To have a visual vision of the audio signal, we plot the waveform of different wav files:
 
+![waveforms](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/waveforms_speech_commands.png)
 
 The deep neural networks can obtain as input a mel spectogram from the audio instead of the raw audio data. A spectogram is a visualization of the frequency spectrum of a signal and the Mel scale mimics how the human ear works (humans are better at detecting differences at lower frequencies than at higher frequencies). We use torchaudio library to get the mel spectogram:
 
+![mel_spectogram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/zero_mel_spectogram.png)
 
 
-
-In our Dataset_analysis.ipynb(FALTA LINK) file it is possible to have a deeper understanding of this dataset as well as it is possible to listen to sample examples.
+In our [Dataset_analysis.ipynb](https://github.com/unaivicente/FinalProjectAIDL/blob/main/Dataset_analysis.ipynb) file it is possible to have a deeper understanding of this dataset as well as it is possible to listen to sample examples.
 
 For further information about the dataset, see this [paper](https://arxiv.org/pdf/1804.03209.pdf).
 
 ## Experiment
 
-In this experiment, we created different architectures and tuned the hyperparameters of the different deep neural networks in order to find the highest accuracy. We wanted to obtain the different results by changing the sample rate (8kHz or 16kHz) of the input raw data.
+In this experiment, we created different architectures and tuned the hyperparameters of the different deep neural networks in order to find the highest accuracy. We wanted to obtain the different results of the same architectures by changing the sample rate (8kHz or 16kHz) of the input raw data.
 
 We created 2 CNN architectures, 5 LSTM and 6 GRU.
 
