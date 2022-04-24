@@ -167,7 +167,7 @@ Here we present the different GRU architectures tested:
 
 ![grugraph](https://user-images.githubusercontent.com/92716609/164751352-881c90e6-e827-403c-9d3c-07bea17950a6.png)
 
-For further information about the different architectures, see [Readme](https://github.com/unaivicente/FinalProjectAIDL/blob/main/GRU/README_GRU.md) in GRU folder.
+For more information about the different architectures, see [Readme](https://github.com/unaivicente/FinalProjectAIDL/blob/main/GRU/README_GRU.md) in GRU folder.
 
 
 ## Extra experiment
