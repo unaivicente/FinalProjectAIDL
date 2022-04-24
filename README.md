@@ -1,6 +1,5 @@
 # Speech Classification
-This is a project with several Deep Learning models that gets an audio input and predicts the corresponding label.
-
+This is a project with several Deep Learning models that receive an audio input and predict the corresponding label. 
 
 We started our project with a first aim that we proposed, try to use a transformer architecture directly using waveform raw data from our dataset. However, after numerous attemps we ended up trying many different architectures as we understood there were complexities using a transformer and 1D data that were out of our control and knowledge. Therefore, we are presenting in this present work a comparative study between different DL architectures using raw waveform as well as other methods with the same dataset in an attempt to explore sequential data processing and the different feature extractions with convolutional 1D methods.
 
@@ -8,7 +7,7 @@ Our main goal stay the same from our initial aims:
 * Classify speech commands in their respective and correct labels
 * Tune our model to be the most efficient possible
 
-The deep neural networks used:
+The deep neural networks tested:
 * CNN
 * LSTM
 * GRU
@@ -25,6 +24,69 @@ The machine learning framework used is Pytorch and the machine learning environm
 An example of GPU provided by Google Colab, a TESLA K80 GPU with 12GB:
 
 ![info_gpu](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/colab_gpu.png)
+
+
+## Usage
+
+### Folder structure
+CNN folder. Contains 4 .ipynb files of models to train them and a README file for more information about the models architecture and hyperparameter tuning.
+```
+CNN
+├── C1_CNN_16kHz.ipynb
+├── C1_CNN_8kHz.ipynb
+├── C2_6layers_CNN_16kHz.ipynb
+├── C2_6layers_CNN_8kHz.ipynb
+├── README_CNN.md
+
+```
+GRU folder. Contains 12 .ipynb files of models to train them and a README file for more information about the models architecture and hyperparameter tuning.
+```
+GRU
+├── GRU-1_16kHz.ipynb 
+├── GRU-1_8kHz.ipynb 
+├── GRU-2_16kHz.ipynb 
+├── GRU-2_8kHz.ipynb 
+├── GRU-3_16kHz.ipynb 
+├── GRU-3_8kHz.ipynb 
+├── GRU-4_16kHz.ipynb 
+├── GRU-4_8kHz.ipynb 
+├── GRU-5_16kHz.ipynb 
+├── GRU-5_8kHz.ipynb 
+├── GRU-6_16kHz.ipynb 
+├── GRU-6_8kHz.ipynb 
+├── README_GRU.md
+
+```
+
+LSTM folder. Contains 10 .ipynb files of models to train them and a README file for more information about the models architecture and hyperparameter tuning.
+```
+LSTM
+├── L1_4layersREF_LSTM_16kHz.ipynb 
+├── L1_4layersREF_LSTM_8kHz.ipynb 
+├── L2_4layers256h_LSTM_16kHz.ipynb 
+├── L2_4layers256h_LSTM_8kHz.ipynb 
+├── L3_3layers_LSTM_16kHz.ipynb
+├── L3_3layers_LSTM_8kHz.ipynb
+├── L4_5layers_LSTM_16kHz.ipynb 
+├── L4_5layers_LSTM_8kHz.ipynb 
+├── L5_6layers_LSTM_16kHz.ipynb
+├── L5_6layers_LSTM_8kHz.ipynb
+├──README_LSTM.md
+
+```
+
+MEL folder. Contains 6 .ipynb files of models to train them and a README file for more information about the models architecture and hyperparameter tuning.
+```
+MEL
+├── M1_MEL_16kHz.ipynb
+├── M1_MEL_8kHz.ipynb 
+├── M2_MEL_16kHz.ipynb
+├── M2_MEL_8kHz.ipynb
+├── M3_MEL_16kHz.ipynb
+├── M3_MEL_8kHz.ipynb
+├──README_MEL.md
+
+```
 
 
 ## Dataset
