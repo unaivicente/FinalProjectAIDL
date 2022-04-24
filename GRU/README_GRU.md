@@ -1,5 +1,6 @@
-# DIFFERENT GRU ARCHITECTURES AND HYPERPARAMETER TUNING TESTED
+# GRU
 
+## DIFFERENT GRU ARCHITECTURES AND HYPERPARAMETER TUNING TESTED
 
 ![gru1_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-1_diagram.png)
 
@@ -36,6 +37,26 @@
  
 * GRU-6 : 2 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 30 epochs, 1e-4 of learning rate and Adam optimizer.
 
+
+## TRAINING LOSS
+To compare the difference between different audio input sample rates in training, we can look at the training loss graphs.
+
+### GRU-1
+
+
+
+### GRU-2
+
+### GRU-3
+
+### GRU-4
+
+### GRU-5
+
+### GRU-6
+
+
+## ACCURACY RESULTS
 
 The results of accuracy with the different sample rate of the audio input:
       
