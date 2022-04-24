@@ -43,17 +43,33 @@ To compare the difference between different audio input sample rates in training
 
 ### GRU-1
 
+![gru-1_train_loss](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/training_loss-GRU-1.png)
 
 
 ### GRU-2
 
+![gru-2_train_loss](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/training_loss-GRU-2.png)
+
+
 ### GRU-3
+
+![gru-3_train_loss](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/training_loss-GRU-3.png)
+
 
 ### GRU-4
 
+![gru-4_train_loss](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/training_loss-GRU-4.png)
+
+
 ### GRU-5
 
+![gru-5_train_loss](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/training_loss-GRU-5.png)
+
+
 ### GRU-6
+
+![gru-6_train_loss](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/training_loss-GRU-6.png)
+
 
 
 ## ACCURACY RESULTS
