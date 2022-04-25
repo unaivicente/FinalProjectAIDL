@@ -188,6 +188,10 @@ Accuracy: 85%
 
 ![cnngraph](https://user-images.githubusercontent.com/92716609/164751341-ef5ebeb8-6da2-4533-b50d-871e4ec74019.png)
 
+This is the confussion matrix of the best model in CNN.
+
+![CNN_confussion](https://user-images.githubusercontent.com/92716609/165095424-ceaf445b-ec56-440c-9868-5cf6d38a779e.png)
+
 
 ##### LSTM
 
@@ -235,6 +239,10 @@ Accuracy: 88%
 
 ![lstmgraph](https://user-images.githubusercontent.com/92716609/164751348-10fe9c45-efdb-464f-b99e-46fe77e1f1cc.png)
 
+This is the confussion matrix of the best model in LSTM.
+
+![LSTM2_confussion](https://user-images.githubusercontent.com/92716609/165095356-8cef280f-ad07-494e-9748-1cea326977c3.png)
+
 
 ##### GRU
 
@@ -280,6 +288,10 @@ The main objective was to improve the accuracies found in the [M5 paper](https:/
 
 ![GRU](https://user-images.githubusercontent.com/92716609/165069720-c4a6c0d0-8552-4f4f-af1d-0ff1d4fadd78.png)
 
+This is the confussion matrix of the two best models in GRU.
+
+![GRU1_confussion](https://user-images.githubusercontent.com/92716609/165095378-0abf7966-b1f5-4bdd-a9c1-ffcca2816f97.png)
+![GRU3_confussion](https://user-images.githubusercontent.com/92716609/165095392-0096572e-1d9d-4b8d-85f1-d1c1a93d90c7.png)
 
 ### Conclusions
 
