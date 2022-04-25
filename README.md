@@ -188,7 +188,6 @@ C2: Using 16Khz data. 6 layer 1D convolutional layers with extended channels fro
 
 Accuracy: 85%
 
-![cnngraph](https://user-images.githubusercontent.com/92716609/164751341-ef5ebeb8-6da2-4533-b50d-871e4ec74019.png)
 
 This is the confussion matrix of the best model in CNN.
 
