@@ -296,4 +296,4 @@ M3: Using 16Khz data. In this case, we work with all the samples and we put all 
 | M2    |  62%  |  63%  |
 | M3    |  71%  |  60%  |
 
-More details in [README](https://github.com/unaivicente/FinalProjectAIDL/blob/main/MEL/README_MEL.md)
+Details and references in [README](https://github.com/unaivicente/FinalProjectAIDL/blob/main/MEL/README_MEL.md)
