@@ -262,7 +262,8 @@ The main objective was to improve the accuracies found in the [M5 paper](https:/
 | GRU5  |  73%  |  64%  |
 | GRU6  |  85%  |  85%  |
 
-![grugraph](https://user-images.githubusercontent.com/92716609/164751352-881c90e6-e827-403c-9d3c-07bea17950a6.png)
+![GRU](https://user-images.githubusercontent.com/92716609/165069720-c4a6c0d0-8552-4f4f-af1d-0ff1d4fadd78.png)
+
 
 ### Conclusions
 
@@ -295,5 +296,7 @@ The accuracies obtained passing the test set are the following:
 | M1    |  64%  |  55%  |
 | M2    |  62%  |  63%  |
 | M3    |  71%  |  60%  |
+
+![Mel](https://user-images.githubusercontent.com/92716609/165069683-744d841c-f827-4d9d-a1c7-3e82287599b0.png)
 
 Details and references in [README](https://github.com/unaivicente/FinalProjectAIDL/blob/main/MEL/README_MEL.md)
