@@ -305,9 +305,9 @@ This is the confussion matrix of the two best models in GRU.
 
 ### Conclusions
 
-Accordingly, we found the addition of LSTM and GRU that gave the best results.
+Accordingly and in line to our hypothesis we found the addition of LSTM and GRU performed with the best accuracies.
 
-Contrary to our belief, the differences between 8khz and 16khz are not as significant as we expected.
+Contrary to our belief, the differences between 8khz and 16khz are not as significant as we expected, however, most of the time in LSTM and CNN we find better performances with 16khz, but this is not equally consistent in GRU.
 
 ## Extra experiment
 ##### MELSPECTOGRAM
