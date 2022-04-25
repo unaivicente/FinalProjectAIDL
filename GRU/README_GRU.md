@@ -2,38 +2,35 @@
 
 ## DIFFERENT GRU ARCHITECTURES AND HYPERPARAMETER TUNING TESTED
 
-![gru1_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-1_diagram.png)
-
+![GRU1](https://user-images.githubusercontent.com/92716609/165112353-5cf541f1-61c5-494e-81fd-eb3a570384d0.png)
 
 * GRU-1 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 100 of batch size, 10 epochs, 0.5 of learning rate and SGD optimizer without weight decay.
  
  
  
- ![gru2_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-2_diagram.png)
+![GRU2](https://user-images.githubusercontent.com/92716609/165112373-fdb0d57f-8bc6-4601-9859-170477e3998a.png)
 
 * GRU-2 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 50 of batch size, 40 epochs, 0.01 of learning rate and SGD optimizer with 0.0001 weight decay and StepLR that decays de learning rate of each parameter group by 0.1 (gamma) every 20 epochs.
 
 
       
- ![gru3_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-3_diagram.png)
+![GRU3](https://user-images.githubusercontent.com/92716609/165112397-fffb7195-b528-497b-9662-d99b5862ee67.png)
 
 * GRU-3 : 3 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 10 epochs, 0.5 of learning rate and SGD optimizer without weight decay.
 
       
       
-![gru4_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-4_diagram.png)
+![GRU4](https://user-images.githubusercontent.com/92716609/165112419-ac0b55d4-af90-451f-8f63-9b09fb00e37d.png)
 
 * GRU-4 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 10 epochs, 1e-4 of learning rate and Adam optimizer.
 
      
-     
-![gru5_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-5_diagram.png)
+![GRU5](https://user-images.githubusercontent.com/92716609/165112448-caf8afe2-7534-4766-bb76-635424113d95.png)   
      
 * GRU-5 : 4 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 128 hidden dimension units that end up to a fully connected linear layer. Negative log likelihood as loss function adding a LogSoftmax layer in the last layer of the network. Trained with 150 of batch size, 10 epochs, 0.01 of learning rate and SGD optimizer without weight decay.
 
- 
- 
- ![gru6_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru-6_diagram.png)
+
+![GRU6](https://user-images.githubusercontent.com/92716609/165112499-9e72b47e-8d79-4a94-afa9-d02b409f193b.png)
  
 * GRU-6 : 2 layer 1D convolutional layers for feature extraction that go from 1 to 128 channels with batch normalization and 1D maxpooling and then connecting it to a GRU with 256 hidden dimension units that end up to a fully connected linear layer. Cross Entropy Loss as loss function passing the output of the last layer (linear) directly. Trained with 100 of batch size, 30 epochs, 1e-4 of learning rate and Adam optimizer.
 
