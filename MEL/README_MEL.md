@@ -2,6 +2,8 @@
 
 ## EXTRA EXPERIMENT PLAYING WITH MELSPECTOGRAM TRANSFORMATION
 
+We were encouraged to try another kind of model using MelSpectogram transformation, witch was included in torchaudio library. The idea was to adapt the template that we used in CNN, GRU and LSTM just changing the model architecture and the data input, because this time we are working with images. We used the model architecture from [!ghproject](https://github.com/aminul-huq/Speech-Classification) which is based from [!ASSEMBLY](https://www.assemblyai.com/blog/end-to-end-speech-recognition-pytorch/).
+
 Here we present the following model architectures based only on MelSpectogram, this time the input will be 2-dimensional:
 
 ![m1_diagram](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/M1_diagram.PNG)
@@ -41,4 +43,10 @@ Accuracy: 60%
 
 ![m3_train_loss](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/training_loss_M3.PNG)
 
-As an extra note, adding the number of epochs wasn't improve the accuracies either. 
+As an extra note, adding the number of epochs wasn't improve the accuracies either.
+
+## REFERENCES
+
+- [!CLR](https://arxiv.org/pdf/1506.01186.pdf)
+- [!ASSEMBLY](https://www.assemblyai.com/blog/end-to-end-speech-recognition-pytorch/)
+
