@@ -189,6 +189,7 @@ C2: Using 16Khz data. 6 layer 1D convolutional layers with extended channels fro
 Accuracy: 85%
 
 
+For more information about the different architectures, see [README](https://github.com/unaivicente/FinalProjectAIDL/blob/main/CNN/README_CNN.md) in CNN folder.
 
 ##### LSTM
 
@@ -241,6 +242,7 @@ Accuracy: 88%
 
 ![lstmgraph](https://user-images.githubusercontent.com/92716609/164751348-10fe9c45-efdb-464f-b99e-46fe77e1f1cc.png)
 
+For more information about the different architectures, see [README](https://github.com/unaivicente/FinalProjectAIDL/blob/main/LSTM/README_LSTM.md) in LSTM folder.
 
 ##### GRU
 
