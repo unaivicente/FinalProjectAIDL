@@ -274,6 +274,13 @@ Here we present the different GRU architectures tested:
 
 For more information about the different architectures, see [README](https://github.com/unaivicente/FinalProjectAIDL/blob/main/GRU/README_GRU.md) in GRU folder.
 
+![GRU](https://user-images.githubusercontent.com/92716609/165069720-c4a6c0d0-8552-4f4f-af1d-0ff1d4fadd78.png)
+
+This is the confussion matrix of the two best models in GRU.
+
+![GRU1_confussion](https://user-images.githubusercontent.com/92716609/165095378-0abf7966-b1f5-4bdd-a9c1-ffcca2816f97.png)
+![GRU3_confussion](https://user-images.githubusercontent.com/92716609/165095392-0096572e-1d9d-4b8d-85f1-d1c1a93d90c7.png)
+
 ### Results
 The main objective was to improve the accuracies found in the [M5 paper](https://arxiv.org/pdf/1610.00087.pdf) (63.42% accuracy of M5 model) and in the [Kaggle challenge](https://www.kaggle.com/competitions/tensorflow-speech-recognition-challenge/overview) (91.06% acc.). The accuracies obtained passing the test set are the following:
 
@@ -293,12 +300,6 @@ The main objective was to improve the accuracies found in the [M5 paper](https:/
 | GRU5  |  73%  |  64%  |
 | GRU6  |  85%  |  85%  |
 
-![GRU](https://user-images.githubusercontent.com/92716609/165069720-c4a6c0d0-8552-4f4f-af1d-0ff1d4fadd78.png)
-
-This is the confussion matrix of the two best models in GRU.
-
-![GRU1_confussion](https://user-images.githubusercontent.com/92716609/165095378-0abf7966-b1f5-4bdd-a9c1-ffcca2816f97.png)
-![GRU3_confussion](https://user-images.githubusercontent.com/92716609/165095392-0096572e-1d9d-4b8d-85f1-d1c1a93d90c7.png)
 
 ### Conclusions
 
