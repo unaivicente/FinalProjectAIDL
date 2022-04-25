@@ -168,6 +168,8 @@ When the models are training, the validation set is used to obtain the val_loss 
 
 ##### CNN 
 
+![Screenshot 2022-04-25 at 15 17 51](https://user-images.githubusercontent.com/92716609/165096976-a041804e-85c2-4295-9119-d27ac345ca73.png)
+
 Here we present the following model architectures based only on 1D Convolutional Layers:
 
 C1: Using 8Khz data. 4 layer 1D convolutional layers (Conv1d) that go from 1 to 64 channels, with batch normalization and 1D maxpooling (Maxpool1d). It is the reference and it is directly extracted from M5 model in https://arxiv.org/pdf/1610.00087.pdf
