@@ -168,7 +168,7 @@ When the models are training, the validation set is used to obtain the val_loss 
 
 ##### CNN 
 
-![Screenshot 2022-04-25 at 15 17 51](https://user-images.githubusercontent.com/92716609/165096976-a041804e-85c2-4295-9119-d27ac345ca73.png)
+![cnnchart](https://user-images.githubusercontent.com/92716609/165102293-19601dff-7a0e-4aaa-a21b-a1af0b174180.png)
 
 Here we present the following model architectures based only on 1D Convolutional Layers:
 
