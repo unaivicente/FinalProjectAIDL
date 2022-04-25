@@ -195,6 +195,11 @@ This is the confussion matrix of the best model in CNN.
 
 ##### LSTM
 
+A deep neural network tested is LSTM with the following base architecture.
+
+![Screenshot 2022-04-25 at 15 14 26](https://user-images.githubusercontent.com/92716609/165096725-21215626-47c3-47a7-98b4-6418f4819272.png)
+
+
 Here we present the following model architectures:
 
 L1: Using 16Khz. We start with 4 layer 1D convolutional layers for feature extraction that go from 1 to 256 channels with batch normalization and 1D maxpooling and then connecting it to a LSTM with 128 hidden dimension units that end up to a fully connected linear layer.
@@ -248,7 +253,8 @@ This is the confussion matrix of the best model in LSTM.
 
 Another deep neural network tested is GRU with the following base architecture.
 
-![gru_architecture](https://github.com/unaivicente/FinalProjectAIDL/blob/main/doc/gru_diagram.png)
+![Screenshot 2022-04-25 at 15 14 48](https://user-images.githubusercontent.com/92716609/165096751-7d26801e-34a3-4b11-b6ab-50b0e9566065.png)
+
 
 Here we present the different GRU architectures tested:
 
