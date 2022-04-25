@@ -152,6 +152,10 @@ For further information about the dataset, see this [paper](https://arxiv.org/pd
 
 ### Hypothesis
 
+We have reason to believe that first convolutional layers will do the feature extraction and the addition of a recurrent based architecture as LSTM and GRU.
+
+We also hypothesize 16Khz waveform will have better results as it holds a greater amount of information.
+
 ### Experiment setup
 
 In this experiment, we created different architectures and tuned the hyperparameters of the different deep neural networks in order to find the highest accuracy. We wanted to obtain the different results of the same architectures by changing the sample rate (8kHz or 16kHz) of the input raw data.
@@ -267,6 +271,9 @@ The main objective was to improve the accuracies found in the [M5 paper](https:/
 
 ### Conclusions
 
+Accordingly, we found the addition of LSTM and GRU that gave the best results.
+
+Contrary to our belief, the differences between 8khz and 16khz are not as significant as we expected.
 
 ## Extra experiment
 ##### MELSPECTOGRAM
