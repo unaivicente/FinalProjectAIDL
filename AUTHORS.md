@@ -1,7 +1,6 @@
-Gabriel Carrascosa Sancho
-Miriam Martínez Izquierdo
-Unai Vicente Guirado
+## Gabriel Carrascosa Sancho
+## Miriam Martínez Izquierdo
+## Unai Vicente Guirado
 
-As advisor: 
-Carlos Escolano
+### As advisor: Carlos Escolano
 
